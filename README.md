@@ -1,4 +1,4 @@
-# 📈 Mini-Projeto DataView: Análise Exploratório de Dados (EDA) de Vendas 
+# 📈 MiniProjeto DataView: Análise Exploratória de Dados de Vendas 
 
 ## Sobre o projeto
 O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, desenvolvido em Python em um Jupiter Notebook. O notebook lê, limpa, transforma,  analisa e visualiza um dataset de vendas, gerando métricas e insights.
@@ -21,11 +21,33 @@ O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, 
   - Matplotlib e Seaborn: gráficos, customização e exportação em PNG  
   - Uso básico do GitHub 
 
-## Como executar  ### No Google Colab (recomendado)  
+## Como executar  
+
+### No Google Colab (recomendado)  
 1. Faça upload do notebook dataview.ipynb  
 2. Abra o arquivo carregado no Colab  
 3. Execute as células na ordem, de cima para baixo 
 
+### Localmente (em seu computador)  
+
+#### 1️⃣ Instale as dependências
+O arquivo `requirements.txt` contém todas as bibliotecas necessárias para executar o projeto. Para instalar, abra o terminal na raiz do projeto e execute:
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 2️⃣ Execute o notebook
+Após instalar as dependências, abra o Jupyter Notebook:
+
+```bash
+jupyter notebook notebooks/dataview.ipynb
+```
+
+Ou use o VS Code com a extensão Jupyter e execute as células na ordem.
+
+**O que é `requirements.txt`?**  
+É um arquivo que lista todas as bibliotecas Python necessárias para o projeto, com suas versões mínimas. Isso garante que qualquer pessoa que clone o repositório tenha exatamente o mesmo ambiente de desenvolvimento.
 
 ## Estrutura do Repositório
 
