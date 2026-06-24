@@ -1,2 +1,60 @@
 # Ignorar arquivo de entrega/avaliativo
 Mini-Projeto_Avaliativo_AVA_SESI_SC_SENAI_SC.pdf
+
+# Ambiente Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Dados gerados pela execução do notebook
+notebooks/data/
+notebooks/outputs/
+
+# Arquivos temporários
+*.tmp
+*.log
+.cache/
+
+# Credenciais e dados sensíveis
+.env
+.env.local
+credentials.json
+secrets.json
