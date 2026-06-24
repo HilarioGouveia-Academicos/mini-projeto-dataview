@@ -1,41 +1,63 @@
-# 📈 Mini-Projeto Avaliativo em Python 
-#    DataView: Exploração e Análise de Dados de Vendas
+# 📈 Mini-Projeto DataView: Análise Exploratório de Dados (EDA) de Vendas 
 
-## Contexto
+## Sobre o projeto
+O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, desenvolvido em Python em um Jupiter Notebook. O notebook lê, limpa, transforma,  analisa e visualiza um dataset de vendas, gerando métricas e insights.
 
-O  mercado  de  Inteligência  Artificial  e  Ciência  de  Dados  exige  que   você   demonstre   raciocínio
-lógico,  organização,  capacidade  de  resolver  problemas  com  dados  reais  e  boa  comunicação técnica.   Mesmo   antes   de   construir   modelos   preditivos   avançados   com  redes  neurais  ou aprendizado  de   máquina,  já   é  possível  desenvolver  um  projeto  completo  e  útil  para  seu portfólio usando Python, Pandas, NumPy e visualizações. 
+## O que o projeto analisa  - Receita total e volume de vendas por mês e trimestre  - Top produtos e categorias por receita  - Desempenho por região  - Segmentação de clientes por nível de gasto (Bronze, Prata, Ouro)  - Comparação entre os dados com e sem tratamento de outliers (v1 e v2)  - Exportação de relatórios em CSV e JSON 
 
+## Objetivo
+  Praticar os principais conceitos:  
+  - Lógica de programação com Python  
+  - Variáveis, tipos de dados e operadores  
+  - Condicionais (if, elif, else) e repetição (for, while)  
+  - Funções com parâmetros, retorno e funções lambda  
+  - Funções reutilizáveis  
+  - Leitura e escrita de arquivos CSV e JSON  
+  - Módulo datetime para manipulação de datas  
+  - Expressões regulares com o módulo re  
+  - Pandas: DataFrames, limpeza, groupby, filtros e transformações  
+  - NumPy: arrays, operações vetorizadas, broadcasting  
+  - Detecção e tratamento de outliers (IQR ou z-score)  
+  - Matplotlib e Seaborn: gráficos, customização e exportação em PNG  
+  - Uso básico do GitHub 
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
-
----
+## Como executar  ### No Google Colab (recomendado)  
+1. Faça upload do notebook dataview.ipynb  
+2. Abra o arquivo carregado no Colab  
+3. Execute as células na ordem, de cima para baixo 
 
 
 ## Estrutura do Repositório
 
 ```
 📁 mini-projeto-dataview/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+├── 📁 data/                          
+│   ├── 📁 raw                       # Dataset bruto gerado
+│   └── 📁 processed 
+│       ├── 📁 v1_com_outliers/      # Dados de limpeza geral, outliers mantidos  
+│       ├── 📁 v2_outliers_tratado/  # Limpeza v1 + tratamento de outliers
+|       └── 📁 final/                # Dataset escolhido para uso futuro  │
+├── 📁 notebooks/                      
+│   └── dataview.ipynb               # Notebook principal de EDA
+├── 📁 outputs/
+│   ├── metricas_por_mes.csv         #
+│   ├── segmentacao_clientes.csv     #
+│   ├── estatisticas_gerais.json     #
+│   └── 📁 graficos/
+└── 📄 README.md
 ```
+
+## Ferramentas utilizadas  
+- Python 3.10+  
+- Google Colab / VS Code  
+- Bibliotecas: pandas, numpy, matplotlib, seaborn, re, datetime, os, random  
+- GitHub para versionamento  
+
+## Vídeo de demonstração  
+[Inserir link do Google Drive ou YouTube aqui] 
+
+## Últimas alterações
+- Notebook movido para `notebooks/dataview.ipynb` (24/06/2026).
+- Arquivo de entrega `Mini-Projeto_Avaliativo_AVA_SESI_SC_SENAI_SC.pdf` adicionado ao `.gitignore`.
+
 
