@@ -3,7 +3,7 @@
 ## Sobre o projeto
 O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, desenvolvido em Python em um Jupiter Notebook. O notebook lê, limpa, transforma,  analisa e visualiza um dataset de vendas, gerando métricas e insights.
 
-## O que o projeto analisa  - Receita total e volume de vendas por mês e trimestre  - Top produtos e categorias por receita  - Desempenho por região  - Segmentação de clientes por nível de gasto (Bronze, Prata, Ouro)  - Comparação entre os dados com e sem tratamento de outliers (v1 e v2)  - Exportação de relatórios em CSV e JSON 
+### O que o projeto analisa  - Receita total e volume de vendas por mês e trimestre  - Top produtos e categorias por receita  - Desempenho por região  - Segmentação de clientes por nível de gasto (Bronze, Prata, Ouro)  - Comparação entre os dados com e sem tratamento de outliers (v1 e v2)  - Exportação de relatórios em CSV e JSON 
 
 ## Objetivo
   Praticar os principais conceitos:  
@@ -54,7 +54,7 @@ O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, 
 - GitHub para versionamento  
 
 ## Vídeo de demonstração  
-[Inserir link do Google Drive ou YouTube aqui] 
+https://www.loom.com/share/0c8e23788c5d4cbf94007a2abe64bca3Inserir 
 
 ## Últimas alterações
 - Notebook movido para `notebooks/dataview.ipynb` (24/06/2026).
