@@ -78,8 +78,31 @@ Ou use o VS Code com a extensão Jupyter e execute as células na ordem.
 ## Vídeo de demonstração  
 https://www.loom.com/share/0c8e23788c5d4cbf94007a2abe64bca3Inserir 
 
+## Sugestões de Melhoria para o Notebook
+
+Este notebook já apresenta uma excelente estrutura para a exploração e análise de dados. No entanto, algumas melhorias podem ser implementadas para torná-lo ainda mais robusto, organizado e produtivo, especialmente em cenários de projetos maiores ou em equipe:
+
+1.  **Estruturação com uma Função `main()`**: Embora o notebook seja linear, envolver a execução principal em uma função `main()` e usar `if __name__ == '__main__': main()` pode melhorar a organização. Isso torna o código mais fácil de testar e reutilizar em outros scripts.
+
+2.  **Modularização em Arquivos Python (`.py`)**: As funções definidas (como `gerar_dataset_vendas`, `limpar_dados`, `calcular_metricas`, etc.) poderiam ser extraídas para arquivos `.py` separados em um diretório `src/`. Por exemplo, `src/data_ingestion.py`, `src/data_cleaning.py`, `src/data_analysis.py`. No notebook, essas funções seriam então importadas (ex: `from src.data_cleaning import limpar_dados`), tornando o notebook mais limpo e focado na orquestração e visualização dos resultados, não na definição de cada função.
+
+3.  **Type Hints**: Adicionar anotações de tipo (type hints) às funções (`def limpar_dados(df: pd.DataFrame) -> Tuple[pd.DataFrame, dict]:`) melhora a legibilidade, facilita a depuração e permite que IDEs e ferramentas de análise estática identifiquem potenciais erros mais cedo.
+
+4.  **Uso de Logging**: Em vez de apenas `print()` para mensagens de status e relatórios, a implementação da biblioteca `logging` do Python permite um controle mais granular sobre os logs (níveis de severidade, saída para arquivo, etc.). Isso é crucial para monitoramento e depuração em ambientes de produção.
+
+5.  **Configuração Externa**: Parâmetros como `n_registros` na geração do dataset, limites de segmentação de clientes, ou caminhos de diretório poderiam ser carregados de um arquivo de configuração (YAML, TOML ou JSON). Isso facilita a alteração desses parâmetros sem modificar o código do notebook.
+
+6.  **Tratamento de Exceções**: Embora o notebook já faça um bom trabalho com `errors='coerce'` no `pd.to_datetime`, adicionar blocos `try-except` em pontos críticos pode tornar o código mais resiliente a falhas inesperadas (ex: falha na escrita/leitura de arquivos, problemas de memória com datasets muito grandes).
+
+7.  **Testes Unitários**: Para as funções modularizadas, a criação de testes unitários garante que cada componente funcione conforme o esperado e que as modificações futuras não introduzam regressões. Ferramentas como `pytest` seriam ideais.
+
+8.  **Docstrings Completas**: Expandir as docstrings para seguir convenções como NumPy ou Google style, incluindo seções para parâmetros, retornos, exceções e exemplos de uso, melhora drasticamente a documentação do código.
+
+Implementar essas sugestões gradualmente ajudaria a transformar este notebook em uma solução ainda mais robusta e de nível de produção para análise de dados.
+
 ## Últimas alterações
 - Notebook movido para `notebooks/dataview.ipynb` (24/06/2026).
 - Arquivo de entrega `Mini-Projeto_Avaliativo_AVA_SESI_SC_SENAI_SC.pdf` adicionado ao `.gitignore`.
+- Adicionada seção `Sugestões de Melhoria para o Notebook` ao README (02/07/2026).
 
 
