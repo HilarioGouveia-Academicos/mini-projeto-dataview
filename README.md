@@ -1,7 +1,11 @@
-# 📈 MiniProjeto DataView: Análise Exploratória de Dados de Vendas 
+![logo senai-sctec](image.png)
+
+# Projeto DataView2: Modelo de Previsão de Vendas 
 
 ## Sobre o projeto
-O DataView PY é um projeto de análise exploratória de dados (EDA) de vendas, desenvolvido em Python em um Jupiter Notebook. O notebook lê, limpa, transforma,  analisa e visualiza um dataset de vendas, gerando métricas e insights.
+
+O DataView2 evoluiu de um projeto de Análise Exploratória de Dados (EDA) para uma solução de Data Science. Além de lêr, limpar, transformar, analisar e visualizar um dataset de vendas, gerando métricas e insights,
+o projeto agora integra modelos de Machine Learning para prever a receita futura (Regressão).
 
 ### O que o projeto analisa  - Receita total e volume de vendas por mês e trimestre  - Top produtos e categorias por receita  - Desempenho por região  - Segmentação de clientes por nível de gasto (Bronze, Prata, Ouro)  - Comparação entre os dados com e sem tratamento de outliers (v1 e v2)  - Exportação de relatórios em CSV e JSON 
 
@@ -75,8 +79,13 @@ Ou use o VS Code com a extensão Jupyter e execute as células na ordem.
 - Bibliotecas: pandas, numpy, matplotlib, seaborn, re, datetime, os, random  
 - GitHub para versionamento  
 
-## Vídeo de demonstração  
+## Vídeo de demonstração
+
+Notebook - EDA
 https://www.loom.com/share/0c8e23788c5d4cbf94007a2abe64bca3Inserir 
+
+Notebook - ML
+https://www.loom.com/share/801041c473554ce59670cf0084852ee8
 
 ## Sugestões de Melhoria para o Notebook
 
